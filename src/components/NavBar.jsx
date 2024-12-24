@@ -4,7 +4,7 @@ function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg shadow-sm sticky-top">
             <div className="container justify-content-between">
-                <Link className="navbar-brand" to="/"><img src="../public/logo-dark.png" height={40} alt="" /></Link>
+                <Link className="navbar-brand" to="/"><img src="/logo-dark.png" height={40} alt="" /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -14,7 +14,7 @@ function NavBar() {
                             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/shop">Shop</Link>
+                            <Link className="nav-link" to="shop">Shop</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#">For Businesses</Link>
