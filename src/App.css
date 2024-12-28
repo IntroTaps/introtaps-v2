@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'IntroTaps';
+  src: url(/public/fonts/harabara.otf);
+  
+}
 ::selection{
-  background-color: #C8CE49 !important; 
-  color: black !important;
+  background-color: #C8CE49 !important;
+  color: rgb(255, 255, 255) !important;
 }
 .prevent-select {
   -webkit-user-select: none; /* Safari */
@@ -41,7 +46,14 @@ body{
 
 }
 .navbar a{
-  color:rgb(255, 255, 255) !important;
+  color:rgb(200, 200, 200) !important;
+  transition: 0.5s;
+
+}
+.nav-link.active{
+  color: #C8CE49 !important;
+  transform: scale3d(1.01);
+  transition: 0.5s;
 }
 .btn{
   border-radius: 50px;;
@@ -58,11 +70,13 @@ body{
 .btn-outline-primary{
   border: 1px solid #C8CE49;
   color: #C8CE49;
+  
 }
 .btn-outline-primary:hover{
   background-color: #C8CE49;
   color: black;
   border: 1px solid #C8CE49;
+  
 }
 .hero{
   background: radial-gradient(circle, rgb(34, 34, 34), rgb(33, 33, 33));
@@ -78,6 +92,9 @@ body{
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: 'IntroTaps';
+    word-spacing: -15px; /* Adjust this value to lessen the horizontal spacing */
+
 }
 .secondline{
   font-size: 1.5rem;
@@ -102,6 +119,9 @@ body{
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: 'IntroTaps';
+  word-spacing: -15px; /* Adjust this value to lessen the horizontal spacing */
+
 }
 .card-card{
   background-color: rgb(33, 33, 33);
@@ -124,7 +144,7 @@ body{
   background-color: rgb(33, 33, 33);
   color: white;
   padding: 40px 0;
-  height: 90vh;
+  height: 900;
 }
 .imgcardoptions{
   height: auto;
@@ -158,6 +178,43 @@ body{
 .footer-lists a:hover{
   color: #ffffff;
 }
+
+.statblock {
+  background-color: #C8CE49;
+  color: #1c1c1c;
+  height: 300px;
+  padding: 40px 0;
+  display: flex;
+  max-width: 500px;
+}
+.statblock.left{
+  background-color: rgb(33, 33, 33);
+  color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.statblock.right{
+  background-color: #515f00;
+  color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.iconlarge{
+  background-color: #C8CE49;
+  border-radius: 100px;
+}
+.row-prop{
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 40px;
+  color: white;
+}
+.img-small-on-mobile{
+  height:auto;
+  width: 100%;
+  border-radius: 30px;
+}
 @media screen and (max-width: 768px){
   .card-card-h{
       height: 300px;
@@ -180,7 +237,8 @@ body{
   .imgcardgreen{
       height: 165px;
   }
+  .statblock {
+    border-radius: 1px !important;
+  }
+
 }
-
-
-

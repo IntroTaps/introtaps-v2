@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Bif from '../functions/IconFlled';
 function CardOptions() {
     return (
         <div className="container mt-5">
@@ -19,7 +20,7 @@ function CardOptions() {
                             <div className="card-card text-center shadow-lg">
                                 <img src={card.imgSrc} alt={card.imgAlt} className="imgcardoptions" />
                                 <div className="mt-3">
-                                    <h4><b>{card.title}</b></h4>
+                                    <h4><b>{card.title}</b> <Link  to="shop" className="btn btn-primary"><Bif i="arrow-up-right-circle"></Bif></Link></h4>
                                     <p className='text-white-50'>{card.description}</p>
                                 </div>
                             </div>
@@ -50,22 +51,21 @@ const cardData = [
         imgSrc: "/standard-card.png",
         imgAlt: "Standard Card",
         title: "Standard",
-        description: "Made from stainless steel and laser-engraved, this card demands attention. Available in Black, Gold, and Silver. Gold and Silver cards are engraved in black. Black cards will be engraved showing the",
+        description: "Standard Card comes with all of the essential features. It is the most Budget Friendly way to shift to eco friendly solution. Packed with features, it comes with 3 profile themes, upto 10 leads and upto 8 Social Links",
         justify: "center",
-        badge: "POPULAR"
     },
     {
         imgSrc: "/img/customcard.gif",
         imgAlt: "Custom Card",
         title: "Custom",
-        description: "This eco-friendly approach to networking is sure to make an impression. And we plant a tree for every card sold. Available in Birch (light) and Sapele (dark) from carefully sourced woods.",
+        description: "Customize your card according to you needs. For those who want everything customized to match their personality. A budget friendly Customizable card with all features included in standard card",
         justify: "center"
     },
     {
         imgSrc: "/img/cardpremium.png",
         imgAlt: "Premium Card",
         title: "Premium",
-        description: "The most popular option for digital business cards. Made from durable, 8 times recyclable plastic. Designed for longevity and produced with precision: the perfect choice for any occasion.",
+        description: "For those who want to Stand Out. Enjoy Exclusive features including but not limited to More than 6 themes, Unlimited Leads,  Customized Design, 24/7 Support and more",
         justify: "center"
     }
 ];
