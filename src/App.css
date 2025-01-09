@@ -89,11 +89,11 @@ body{
   color: #C8CE49;
 }
 .hero-heading{
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 900 !important;
   margin-bottom: 20px;
   font-family: 'IntroTaps';
-    word-spacing: -15px; /* Adjust this value to lessen the horizontal spacing */
+    word-spacing: -19px; /* Adjust this value to lessen the horizontal spacing */
 
 }
 .secondline{
@@ -110,6 +110,8 @@ body{
   background: #c8ce49;
   color: black;
   padding: 40px 0;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 .imgcardgreen{
   height: 220px;
@@ -140,11 +142,15 @@ body{
   height: 200px;
   border-radius: 20px;
 }
-.footer{
+.footer {
   background-color: rgb(33, 33, 33);
   color: white;
   padding: 40px 0;
-  height: 900;
+  height: 700px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  position: relative;
 }
 .imgcardoptions{
   height: auto;
@@ -215,6 +221,18 @@ body{
   width: 100%;
   border-radius: 30px;
 }
+
+
+.hero-section{
+  background-color: #212121; 
+  padding: 50px 0;
+  border-bottom-left-radius: 1000px; 
+  border-bottom-right-radius: 1000px;
+  border-bottom: 100px solid #212121;  
+}
+
+
+/* Media Queries */
 @media screen and (max-width: 768px){
   .card-card-h{
       height: 300px;
@@ -240,5 +258,9 @@ body{
   .statblock {
     border-radius: 1px !important;
   }
-
+  .hero-section{
+    border-bottom: 50px solid #212121;  
+    border-bottom-left-radius: 100px; 
+    border-bottom-right-radius: 100px;
+  }
 }

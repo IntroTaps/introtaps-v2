@@ -54,7 +54,7 @@ function Footer() {
     ];
 
     return (
-        <footer className="footer">
+        <footer className="footer ">
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-lg-4">
@@ -77,9 +77,9 @@ function Footer() {
                         </h1>
                         <Link to="shop" className="btn btn-lg btn-primary">Get Started</Link>
                     </div>
-                    <div className="col-sm-4 ">
+                    <div className="col-sm-4">
                         <div className="row ">
-                            <div className="">
+                            <div className="col text-center mt-3"> 
                                 {socialLinks.map((link, index) => (
                                     <Link key={index} to={link.to} target="_blank">
                                         <Bi i={link.icon} s={`heading-bold-1 ${index > 0 ? 'ms-5' : ''} text-green`} />
@@ -91,7 +91,7 @@ function Footer() {
                 </div>
                 <hr className="line-seperator mt-5" />
                 <div className="row align-items-center justify-content-between">
-                    <div className="col text-white-50 text-center">2024 &copy; All Rights Reserved | A Project of IntroTaps Technologies Pvt. Ltd</div>
+                    <div className="col text-white-50 text-center">2024 &copy; All Rights Reserved | A Project of IntroTaps Technologies &reg;</div>
                 </div>
                
             </div>

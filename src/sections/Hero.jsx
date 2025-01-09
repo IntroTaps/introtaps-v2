@@ -9,7 +9,6 @@ function Hero() {
         const interval = setInterval(() => {
             setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
         }, 1000); // Change word every 2 seconds
-        <h1>Hello World</h1>
 
         return () => clearInterval(interval);
     }, []);
