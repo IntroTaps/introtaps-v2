@@ -10,6 +10,8 @@ import Shop from './routes/Shop'
 import Business from './routes/Business'
 import About from './routes/About'
 import StandardCard from './routes/Standard'
+import Custom from './routes/Custom'
+import Premium from './routes/Premium'
 const router = createBrowserRouter([
   {
     path: "/", 
@@ -28,8 +30,16 @@ const router = createBrowserRouter([
   element: <About />,
 },
 {
-  path: "/shop/standard",
+  path: "/cards/standard",
   element: <StandardCard />
+},
+{
+  path: "/cards/custom",
+  element: <Custom />
+},
+{
+  path: "/cards/premium",
+  element: <Premium />
 }
 ])
 createRoot(document.getElementById('root')).render(  

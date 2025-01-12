@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function HeroOther({ title, words, tagline }) {
+function HeroOther({ title, words, tagline, type }) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
       
   useEffect(() => {
@@ -12,11 +12,11 @@ function HeroOther({ title, words, tagline }) {
   }, [words]);
   
   return (
-    <div className="hero-section">
+    <div className={`hero-section ${type === 'premium' ? 'green-bg' : ''}`}>
       <div className="container">
         <div className="text-center">
-          <h1 className="heading-bold-1 text-white">{title} <b className='text-green'>{words[currentWordIndex]}.</b></h1>
-          <p className="text-white-50">
+          <h1 className={`heading-bold-1 ${type === 'premium' ? '' : 'text-white'}`}>{title} <b className={`${type === 'premium' ? '' : 'text-green'}`}>{words[currentWordIndex]}.</b></h1>
+          <p className={`${type === 'premium' ? '' : 'text-white-50'}`}>
             {tagline}
           </p>
         </div>

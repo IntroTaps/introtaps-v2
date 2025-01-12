@@ -92,7 +92,7 @@ body{
   font-size: 5rem;
   font-weight: 900 !important;
   margin-bottom: 20px;
-  font-family: 'IntroTaps';
+  font-family: 'IntroTaps', sans-serif;
     word-spacing: -19px; /* Adjust this value to lessen the horizontal spacing */
 
 }
@@ -263,4 +263,12 @@ body{
     border-bottom-left-radius: 100px; 
     border-bottom-right-radius: 100px;
   }
+}
+.yellowstar{
+  color: rgb(197, 166, 8);
+}
+.green-bg{
+  background-color: #C8CE49;
+  border-bottom: 100px solid #C8CE49;  
+  color: black !important;
 }

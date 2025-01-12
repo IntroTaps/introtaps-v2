@@ -53,7 +53,7 @@ const cardData = [
         title: "Standard",
         description: "Standard Card comes with all of the essential features. It is the most Budget Friendly way to shift to eco friendly solution. Packed with features, it comes with 3 profile themes, upto 10 leads and upto 8 Social Links",
         justify: "center",
-        link: "/shop/standard"
+        link: "/cards/standard"
     },
     {
         imgSrc: "/img/customcard.gif",
@@ -61,7 +61,7 @@ const cardData = [
         title: "Custom",
         description: "Customize your card according to you needs. For those who want everything customized to match their personality. A budget friendly Customizable card with all features included in standard card",
         justify: "center",
-        link: "/shop/custom"
+        link: "/cards/custom"
 
     },
     {
@@ -70,7 +70,7 @@ const cardData = [
         title: "Premium",
         description: "For those who want to Stand Out. Enjoy Exclusive features including but not limited to More than 6 themes, Unlimited Leads,  Customized Design, 24/7 Support and more",
         justify: "center",
-        link: "/shop/premium"
+        link: "/cards/premium"
     }
 ];
 
