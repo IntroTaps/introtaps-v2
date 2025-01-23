@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import NavBar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import Footer from '../components/footer';
 import HeroOther from '../sections/HeroOther';
 import CardOptions from '../sections/CardOptions';

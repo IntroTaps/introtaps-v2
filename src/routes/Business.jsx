@@ -1,4 +1,4 @@
-import NavBar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import { Helmet } from "react-helmet";
 function Business() {
       return (

@@ -5,7 +5,7 @@ import Section4 from "../sections/Section4";
 import Brands from "../sections/Brands";
 import CardOptions from "../sections/CardOptions";
 import Footer from "../components/footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import Statstripe from "../sections/Statstripe";
 import CustomCard from "../sections/CustomCard";
 import { Helmet } from "react-helmet";

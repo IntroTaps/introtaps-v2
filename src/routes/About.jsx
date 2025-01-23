@@ -1,5 +1,5 @@
 import HeroOther from "../sections/HeroOther";
-import NavBar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import Footer from "../components/footer";
 import AboutSection from "../sections/AboutSection";
 function About() {
